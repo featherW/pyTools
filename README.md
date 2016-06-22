@@ -1,5 +1,5 @@
 # pyTools
-python琐碎的工具集，仅供娱乐
+琐碎的python工具集，仅供娱乐
 
 ---
 
