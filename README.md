@@ -1,6 +1,8 @@
 # pyTools
 琐碎的python工具集，仅供娱乐
 
+哦，代码都是搜刮来的，在from中有原网址> <
+
 ---
 
 ## ip_scaner.py
