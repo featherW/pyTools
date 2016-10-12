@@ -38,14 +38,15 @@ def find_ip(ip_prefix):
         time.sleep(0.3)
 
 
-try:
-    print "start time %s"%time.ctime()
-    commandargs = sys.argv[1:]
-    args = "".join(commandargs)
-            
-    ip_prefix = '.'.join(args.split('.')[:-1])
-    find_ip(ip_prefix)
-    print "end time %s"%time.ctime()
-except KeyboardInterrupt:                                                                                                                                                             
-    print "You pressed Ctrl+C"
-    sys.exit()
+if __name__ == "__main__":
+    try:
+        print "start time %s"%time.ctime()
+        commandargs = sys.argv[1:]
+        args = "".join(commandargs)
+                
+        ip_prefix = '.'.join(args.split('.')[:-1])
+        find_ip(ip_prefix)
+        print "end time %s"%time.ctime()
+    except KeyboardInterrupt:                                                                                                                                                             
+        print "You pressed Ctrl+C"
+        sys.exit()
