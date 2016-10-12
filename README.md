@@ -38,3 +38,15 @@
 资料：```def DO(domain)```中正则，源代码中为```r=re.compile(r'&gt; (.*)<br/><b>查询结果：(.*)</b><br/>')```这里的```(.*)```是不包括换行符的任意字符。大概由于时间久远，网页发生了改变，返回的数据中含有换行符，所以一直无法匹配。如果要匹配包含的换行符的任意字符，可以使用```([\s\S]*)```
 
 总结：以urllib2库为基础，通过ip138的接口查询，分析返回的数据信息，提取所需要的结果。
+
+
+---
+
+## scanner_allip_with_port.py
+
+说明: 扫描局域网中指定端口(默认80)开放的所有IP
+
+用法: ```python scanner_allip_with_port.py 192.168.123.2 8089``` 或者 ```python scanner_allip_with_port.py 192.168.123.2```
+
+资料: 参考ip_scaner.py和portscanner.py
+
